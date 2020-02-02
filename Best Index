@@ -3,9 +3,9 @@
 
 #include<stdio.h>
 
-int bestindex(int a[],int n,int i)
+long long int bestindex(int a[],int n,int i)
 {
-    int sum=a[i],m=0,t=2;
+    long long int sum=a[i],m=0,t=2;
     while((i+t)<n)
     {
         while(m<t)
@@ -17,25 +17,25 @@ int bestindex(int a[],int n,int i)
     return sum;
 }
 
-void max(int b[],int n)
+void max(long long int b[],long long int n)
 {
-    int m=b[0];
+    long long int m=b[0];
     for(int i=0;i<n;i++)
     {
         if(b[i]>m)
             m=b[i];
     }
-    printf("%d",m);
+    printf("%lld",m);
 }
 
 void main()
 {
-    int n;
-    scanf("%d",&n);
-    int a[n],b[n];
-    for(int i=0;i<n;i++)
+    long long int n;
+    scanf("%lld",&n);
+    long long int a[n],b[n];
+    for(long long int i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%lld",&a[i]);
     }
     for(int i=0;i<n;i++)
     {
