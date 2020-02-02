@@ -1,0 +1,45 @@
+//this code works for small values but not working for large values
+// PLZZ EXPLAIN ME WHY???
+
+#include<stdio.h>
+
+int bestindex(int a[],int n,int i)
+{
+    int sum=a[i],m=0,t=2;
+    while((i+t)<n)
+    {
+        while(m<t)
+        {
+            sum+=a[++i];
+            m++;
+        }t++;
+    }
+    return sum;
+}
+
+void max(int b[],int n)
+{
+    int m=b[0];
+    for(int i=0;i<n;i++)
+    {
+        if(b[i]>m)
+            m=b[i];
+    }
+    printf("%d",m);
+}
+
+void main()
+{
+    int n;
+    scanf("%d",&n);
+    int a[n],b[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(int i=0;i<n;i++)
+    {
+        b[i]=bestindex(a,n,i);
+    }
+    max(b,n);
+}
