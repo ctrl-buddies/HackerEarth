@@ -1,8 +1,11 @@
-This is a group for ctrl people
-please provide link and full description of program 
-commit file in folder with particular name (example: Don't write p1.c,a1.c,program1.java etc)
+```diff
+!This is a group for ctrl people
 
-all copyrights is recived by ctrl- ©
-you can take our program as reference.
+-please provide link and full description of program 
+-commit file in folder with particular name (example: Don't write p1.c,a1.c,program1.java etc)
 
-you can email us on krunaljethva90@gmail.com
++all copyrights is recived by ctrl- ©
++you can take our program as reference.
+
+#you can email us on krunaljethva90@gmail.com
+```
