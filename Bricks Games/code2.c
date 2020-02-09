@@ -3,7 +3,7 @@ https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-in
 #include<stdlib.h>
 void main()
 {
-    int n,i=1,motu=1,patlu=1;
+    int n,motu,patlu=1;
     scanf("%d",&n);
     while(n>0){
         n-=patlu;
